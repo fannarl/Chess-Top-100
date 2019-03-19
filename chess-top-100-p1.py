@@ -1,4 +1,4 @@
-# Verkefni unnið í samstarfi Eyþór Dan Sigurðsson og Fannar Leo Örvarsson last update 16.03.2019 [Time : EDS/FLÖ] (final version?)
+# Verkefni unnið í samstarfi Eyþór Dan Sigurðsson og Fannar Leo Örvarsson last update 19.03.2019 [03:27 : EDS] (final version?)
 
 #Reads the file to Dict:
 def create_players_dict(filename):
