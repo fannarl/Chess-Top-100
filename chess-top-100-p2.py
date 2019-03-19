@@ -26,7 +26,7 @@ def get_values(temp_list):
 
 #Dict by countries:
 def create_countries_dict(dict_players):
-    '''Uses a players dictionary to creata a year dictionary in which years are keys and tuple of player names are values'''
+    '''Uses a players dictionary to creata a countries dictionary in which countries are keys and tuple of player names are values'''
     year_dict = {}
     for a_tuple in dict_players.items():
         chess_player = a_tuple[0]
@@ -54,7 +54,7 @@ def print_sorted(the_dict, dict_players):
         print("{} ({}) ({:.1f}):".format(key, len(players), average_rating))
         for player in players:
             rating = dict_players[player][2]
-            print("{:>40}{:>10}".format(player,rating))
+            print("{:>40}{:>10}".format(player, rating))
 
 def print_header(header_str):
     print(header_str)
@@ -65,5 +65,5 @@ def print_header(header_str):
 filename = input("Enter filename: ")
 dict_players = create_players_dict(filename)
 dict_countries = create_countries_dict(dict_players)
-print_header("Players by country:")
+print_header("Players by birth year: ")
 print_sorted(dict_countries, dict_players)
